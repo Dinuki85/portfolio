@@ -12,16 +12,16 @@ const Header = () => {
         transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
         className="w-24 h-24 overflow-hidden rounded-full"
       >
-        <Image 
-          src={assets.profile_img} 
-          alt=" " 
-          width={100} 
-          height={100} 
-          className='object-cover object-center w-full h-full' 
+        <Image
+          src={assets.profile_img}
+          alt=" "
+          width={100}
+          height={100}
+          className='object-cover object-center w-full h-full'
         />
       </motion.div>
 
-      <motion.h3 
+      <motion.h3
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.3 }}
@@ -51,22 +51,26 @@ const Header = () => {
           initial={{ y: -30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
-          href='#contact' 
+          href='#contact'
           className='flex items-center gap-2 px-10 py-3 text-white bg-black border border-white rounded-full dark:bg-transparent:'>
           Contact Me
           <Image src={assets.right_arrow_white} alt='' className='w-4' />
         </motion.a>
 
         <motion.a
-          initial={{ y: -30, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
-          href='/dinuki_resume.pdf' 
-          download 
-          className='flex items-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full dark:text-black'>
-          My Resume
-          <Image src={assets.download_icon} alt='' className='w-4' />
-        </motion.a>
+  initial={{ y: -30, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  transition={{ duration: 0.8, delay: 1.2 }}
+  href="/Dinuki_Resume.pdf"
+  download="Dinuki_Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className='flex items-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full dark:text-black '
+>
+  My Resume
+  <Image src={assets.download_icon} alt='' className='w-4' />
+</motion.a>
+
       </div>
     </div>
   )

@@ -16,13 +16,15 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (scrollY > 50) {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
         setIsScroll(true)
       } else {
         setIsScroll(false)
       }
-    })
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
@@ -43,17 +45,58 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           <li><a className="font-Ovo" href="#work">My Projects</a></li>
           <li><a className="font-Ovo" href="#contact">Contact me</a></li>
         </ul>
-        <div className='flex items-center gap-8'>
+
+        {/* Right side icons including GitHub, LinkedIn, dark mode, contact, and mobile menu */}
+        <div className='flex items-center gap-6'>
+          {/* GitHub */}
+          <a
+            href='https://github.com/Dinuki85'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='items-center hidden md:flex'
+            aria-label='GitHub'
+          >
+            <Image
+              src={isDarkMode ?  assets.github_white : assets.github}
+              alt='GitHub'
+              width={24}
+              height={24}
+              className='w-6 h-6 transition-opacity hover:opacity-80'
+            />
+          </a>
+
+          {/* LinkedIn */}
+          <a
+            href='https://www.linkedin.com/in/dinuki-prarthana/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='items-center hidden md:flex'
+            aria-label='LinkedIn'
+          >
+            <Image
+              src={assets.linkedin }
+              alt='LinkedIn'
+              width={24}
+              height={24}
+              className='w-6 h-6 transition-opacity hover:opacity-80'
+            />
+          </a>
+
+          {/* Dark/Light Mode Toggle */}
           <button onClick={() => setIsDarkMode(prev => !prev)}>
             <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} width={20} height={20} alt='' className='w-6' />
           </button>
-          <a href='#contact' className='items-center hidden gap-3 px-10 ml-4 border border-blue-500 rounded-full font-Ovo lg:flex dark:border-white/50'>Contact <Image src={isDarkMode ? assets.arrow_icon : assets.arrow_icon} alt=" " className='w-3' /></a>
+
+          <a href='#contact' className='items-center hidden gap-3 px-10 ml-4 border border-blue-500 rounded-full font-Ovo lg:flex dark:border-white/50'>
+            Contact <Image src={isDarkMode ? assets.arrow_icon : assets.arrow_icon} alt=" " className='w-3' />
+          </a>
 
           <button className='block ml-3 md:hidden' onClick={openMenu}>
             <Image src={isDarkMode ? assets.menu_white : assets.menu_black} width={20} height={20} alt='' className='w-6 ' />
           </button>
         </div>
-        {/*--------MObile MENU ----------------*/}
+
+        {/*--------Mobile MENU ----------------*/}
         <ul ref={sideMenuRef} className={`fixed top-0 bottom-0 z-50 flex flex-col w-64 h-screen gap-4 px-10 py-20 transition duration-500 md:hidden -right-64 bg-red-50 dark:bg-darkTheme dark:text-white`}>
           <div className='absolute right-6 top-6 dark:bg-darkHover dark:text-white' onClick={closeMenu}>
             <Image src={isDarkMode ? assets.close_white : assets.close_black} alt='' className='w-5 cursor-pointer' />

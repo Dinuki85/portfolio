@@ -5,3 +5,29 @@
 * {
   font-family: 'Outfit',sans-serif;
 }
+
+button {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 60px; /* Larger button width */
+  height: 60px; /* Larger button height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  transform: scale(1.2); /* Increase size on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Hover shadow effect */
+}
+
+.scroll-container {
+  overflow-x: hidden; /* Hide scroll bar */
+  display: flex;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Hides the scroll bar */
+}
+

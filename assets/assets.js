@@ -39,13 +39,20 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import intelij_idea from './intelij_idea.jpg';
 import mysql from './mysql.png';
 import home from './home.png';
+import github_white from './github_white.png';
 import Work1 from './Work1.png';
+import nodejs from './Nodejs.png';
+import github from './github_icon.png';
+import linkedin from './linkedin_icon.png';
 
 export const assets = {
     user_image,
     home,
+    github_white,
+    github,
     code_icon,
     Work1,
+    linkedin,
     mysql,
     code_icon_dark,
     edu_icon,
@@ -55,6 +62,7 @@ export const assets = {
     DisasterWatch,
     project_icon_dark,
     vscode,
+    nodejs,
     firebase,
     figma,
     git,
@@ -108,7 +116,26 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Full Stack Development', description: 'Full Stack Web development is the process of building, programming...', link: '' },
+    { icon: assets.web_icon, title: 'Full Stack Web Development', 
+        description: 'Full Stack Web Development involves creating both the frontend (user interface) and backend (server-side logic) of web applications.As a Full Stack Developer, you work with technologies like HTML, CSS, and JavaScript to design intuitive, responsive user interfaces, and use backend frameworks and databases to handle data storage, authentication, APIs, and server-side processes. ', link: '' },
+    {
+        icon: assets.ui_icon, 
+        title: 'Design with Canva',
+        description: 'Design with Canva offers a powerful platform to create visually stunning graphics, presentations, and documents. It simplifies designing with intuitive drag-and-drop tools, templates, and a vast library of elements to meet your branding and creative needs effortlessly.',
+        link: '' 
+    },
+    {
+        icon: assets.web_icon, 
+        title: 'Frontend Development',
+        description: 'Frontend Development focuses on creating responsive and intuitive user interfaces using cutting-edge tools and technologies. Expertise includes React.js, Tailwind CSS, and Next.js to craft modern, fast-loading, and SEO-friendly web applications.',
+        link: '' 
+    },
+    {
+        icon: assets.web_icon, 
+        title: 'Backend Development',
+        description: 'Backend Development involves building scalable, secure, and efficient server-side applications. Proficiency includes technologies like Spring Boot, Node.js, MySQL, and MongoDB to implement robust APIs, manage databases, and handle server logic effectively.',
+        link: '' 
+    },
 
 ]
 

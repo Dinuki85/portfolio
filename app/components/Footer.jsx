@@ -17,11 +17,7 @@ const Footer = (isDarkMode) => {
 
             <div className='items-center justify-between text-center border border-t sm:flex-gray-400 mx-[10%] mt-12 py-6'>
                 <p>		&copy; 2025 Dinuki Prarthana .All right reserved</p>
-                <ul className='flex justify-center gap-10 mt-4 item-center sm:mt-0'>
-                    <li><a target='_black' href='https://github.com/Dinuki85'>GitHub</a></li>
-                    <li><a target='_black' href='https://www.linkedin.com/in/dinuki-prarthana/'>LinkedIn</a></li>
-
-                </ul>
+                
 
             </div>
 
