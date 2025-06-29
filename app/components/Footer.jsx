@@ -2,14 +2,14 @@ import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
-const Footer = () => {
+const Footer = (isDarkMode) => {
   return (
     <div  className='mt-20'>
         <div className='text-center'>
             <Image src={assets.logo} alt='' className='mx-auto mb-2 w-36' />
         
         <div className='flex items-center gap-2 mx-auto w-max'>
-            <Image src={assets.mail_icon} alt='' className='w-6' />
+            <Image src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon} alt='' className='w-6' />
             prarthanadinuki2@gmail.com
 
         </div>
