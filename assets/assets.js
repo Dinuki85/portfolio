@@ -7,6 +7,7 @@ import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
 import firebase from './firebase.png';
+import DisasterWatch from './DisasterWatch.png';
 import figma from './figma.png';
 import canva from './canva.jpg'
 import git from './git.png';
@@ -37,16 +38,21 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import intelij_idea from './intelij_idea.jpg';
 import mysql from './mysql.png';
+import home from './home.png';
+import Work1 from './Work1.png';
 
 export const assets = {
     user_image,
+    home,
     code_icon,
+    Work1,
     mysql,
     code_icon_dark,
     edu_icon,
     edu_icon_dark,
     project_icon,
     intelij_idea,
+    DisasterWatch,
     project_icon_dark,
     vscode,
     firebase,
@@ -83,39 +89,35 @@ export const assets = {
 export const workData = [
     {
         title: 'Travel App',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        description: 'Front End Development',
+        bgImage: Work1,
+         githubLink: 'https://github.com/Dinuki85/TravelApp',
     },
     {
         title: 'Disaster watch app',
-        description: 'Mobile App & Web design',
-        bgImage: '/work-2.png',
+        description: 'Contribute to Full Stack Web & Mobile App Development',
+        bgImage: DisasterWatch,
+        githubLink: 'https://github.com/DisasterWatchHQ',
     },
     {
         title: 'NexShift Stratergies',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'Multi market platform',
-        description: 'Web design',
-        bgImage: '/work-4.png',
-    },
+        description: 'Full Stack Development',
+        bgImage: home,
+        githubLink: 'https://github.com/Dinuki85/NexShift_Stratergies',
+    }
 ]
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Full Stack Development', description: 'Full Stack Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.graphics_icon, title:'Designs', description: 'Designing involves creating logos,envelop,certification .... ', link: '' },
-   
+
 ]
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Tech Stack', description: 'HTML, CSS, JavaScript ,React Js, Next Js,Springboot,Node js,Mysql,MongoDB' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'BSc. in Information Technology'},
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'BSc. in Information Technology' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 3 projects' }
 ];
 
 export const toolsData = [
-    assets.vscode,assets.mysql,assets.canva,assets.intelij_idea, assets.mongodb, assets.git
+    assets.vscode, assets.mysql, assets.canva, assets.intelij_idea, assets.mongodb, assets.git
 ];
