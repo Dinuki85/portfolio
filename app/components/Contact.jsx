@@ -26,7 +26,7 @@ const Contact = () => {
     }
   };
   return (
-    <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none '>
+    <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20  bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none '>
       <h2 className='text-5xl text-center font-Ovo'>Connect With Me</h2>
 
       <form onSubmit={onSubmit} className='max-w-2xl mx-auto'>
