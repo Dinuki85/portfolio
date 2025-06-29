@@ -104,8 +104,8 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           <li><a className="font-Ovo" onClick={closeMenu} href="#top">Home</a></li>
           <li><a className="font-Ovo" onClick={closeMenu} href="#about">About me</a></li>
           <li><a className="font-Ovo" onClick={closeMenu} href="#services">My Service</a></li>
-          <li><a className="font-Ovo" onClick={closeMenu} href="#project">My Projects</a></li>
-          <li><a className="font-Ovo" onClick={closeMenu} href="#work">Contact me</a></li>
+          <li><a className="font-Ovo" onClick={closeMenu} href="#work">My Projects</a></li>
+          <li><a className="font-Ovo" onClick={closeMenu} href="#contact">Contact me</a></li>
         </ul>
       </nav>
     </>
