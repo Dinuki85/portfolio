@@ -9,11 +9,12 @@ const Services = () => {
       
       <div className='grid gap-6 my-10 grid-cols-auto'>
         {serviceData.map(({icon,title,description,link},index)=>(
-            <div key={index} className='py-12 duration-500 border border-gray-400 rounded-lg cursor-pointer pc-8 hover:shadow-black hover:bg-lightHover hover:-translate-y-1 '>
+            <div key={index} className='py-12 duration-500 border border-gray-400 rounded-lg cursor-pointer pc-8 hover:shadow-black hover:bg-lightHover hover:-translate-y-1 dark:hover:bg-darkHover dark:hover:shadow-white'>
+              
                 <Image src={icon} alt='' className='w-10 ' />
-                <h3 className='my-4 text-lg teaxt-gray-700'>{title}</h3>
+                <h3 className='my-4 text-lg teaxt-gray-700 dark:text-white' >{title}</h3>
             
-            <p className='text-sm leading-5 text-gray-600'>
+            <p className='text-sm leading-5 text-gray-600 dark:text-white/80'>
                 {description}
             </p>
             <a href={link} className='flex items-center gap-2 mt-5 text-sm'>

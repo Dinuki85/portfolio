@@ -21,10 +21,10 @@ const Header = () => {
 
         </p>
         <div className='flex flex-col items-center gap-4 mt-4 sm:flex-row'>
-            <a href='#contact' className='flex items-center gap-2 px-10 py-3 text-white bg-black border border-white rounded-full'>
+            <a href='#contact' className='flex items-center gap-2 px-10 py-3 text-white bg-black border border-white rounded-full dark:bg-transparent:'>
                 Contact Me<Image src={assets.right_arrow_white} alt='' className='w-4'/>
             </a>
-            <a href='/dinuki_resume.pdf' download className='flex items-center gap-2 px-10 py-3 border border-gray-500 rounded-full'>
+            <a href='/dinuki_resume.pdf' download className='flex items-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full dark:text-black'>
                 My Resume<Image src={assets.download_icon} alt='' className='w-4'/>
             </a>
         </div>
