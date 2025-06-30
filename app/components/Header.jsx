@@ -72,7 +72,7 @@ const Header = () => {
   initial={{ y: -30, opacity: 0 }}
   whileInView={{ y: 0, opacity: 1 }}
   transition={{ duration: 0.8, delay: 1.2 }}
-  href='/assets/public/resume.pdf' // Correct path
+  href='/resume.pdf' // Updated path
   download="Dinuki_Resume.pdf"
   target="_blank"
   rel="noopener noreferrer"
@@ -87,6 +87,7 @@ const Header = () => {
     className='w-4'
   />
 </motion.a>
+
 
       </div>
     </div>
