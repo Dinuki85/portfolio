@@ -148,4 +148,4 @@ export const infoList = [
 
 export const toolsData = [
     assets.vscode, assets.mysql, assets.canva, assets.intelij_idea, assets.mongodb, assets.git
-];
+]
