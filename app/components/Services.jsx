@@ -25,17 +25,23 @@ const Services = () => {
       className='flex items-center justify-center w-full min-h-screen px-4 py-10 scroll-mt-20'
     >
       <div className='w-full text-center'>
-        <motion.h2
+         <motion.h2
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className="mb-10 text-6xl font-bold text-center font-Ovo lg:text-7xl"
               >
-               My Services
+                My Services
               </motion.h2>
-
         <div className='relative w-full'>
-        
+          {/* Left Scroll Button */}
+          <button
+            onClick={() => handleScroll('left')}
+            className='absolute left-0 z-10 p-4 text-3xl transform -translate-y-1/2 bg-white rounded-full shadow-md top-1/2 dark:bg-gray-800'
+          >
+            ◀
+          </button>
+
           {/* Services Scroll Container */}
           <motion.div
             ref={scrollContainerRef}
@@ -71,7 +77,12 @@ const Services = () => {
           </motion.div>
 
           {/* Right Scroll Button */}
-          
+          <button
+            onClick={() => handleScroll('right')}
+            className='absolute right-0 z-10 p-4 text-3xl transform -translate-y-1/2 bg-white rounded-full shadow-md top-1/2 dark:bg-gray-800'
+          >
+            ▶
+          </button>
         </div>
       </div>
     </motion.div>
