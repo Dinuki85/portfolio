@@ -13,14 +13,13 @@ const Work = ({ isDarkMode }) => {
       className="w-full px-[12%] py-10 scroll-mt-20"
     >
       <motion.h2
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.5 }}
-        className="text-5xl text-center font-Ovo"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="mb-10 text-6xl font-bold text-center font-Ovo lg:text-7xl"
       >
-        My Latest Project
+        Projects Which I Have Done
       </motion.h2>
-
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -32,19 +31,31 @@ const Work = ({ isDarkMode }) => {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             key={index}
-            className="relative rounded-lg cursor-pointer aspect-square group"
+            className="relative overflow-hidden rounded-lg cursor-pointer aspect-square group"
           >
-            <Image
-              src={project.bgImage} // Use imported images from assets.js
-              alt={project.title}
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
-            />
-            <div className="absolute flex flex-col items-center justify-between w-10/12 p-4 duration-500 -translate-x-1/2 bg-white rounded-md bottom-5 left-1/2 group-hover:bottom-7">
+            {project.bgVideo ? (
+              <video
+                src={project.bgVideo}
+                className="object-cover w-full h-full rounded-lg"
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+            ) : (
+              <Image
+                src={project.bgImage} // Use imported images from assets.js
+                alt={project.title}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg"
+              />
+            )}
+
+            <div className="absolute flex flex-col items-center justify-between w-10/12 p-4 duration-500 -translate-x-1/2 bg-white rounded-md bottom-5 left-1/2 group-hover:bottom-7 dark:bg-gray-800 dark:bg-opacity-90">
               <div className="text-center">
-                <h2 className="font-semibold">{project.title}</h2>
-                <p className="text-sm text-gray-700">{project.description}</p>
+                <h2 className="font-semibold text-gray-900 dark:text-white">{project.title}</h2>
+                <p className="text-sm text-gray-700 dark:text-gray-300">{project.description}</p>
               </div>
               <a
                 href={project.githubLink}

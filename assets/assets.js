@@ -44,12 +44,13 @@ import Work1 from './Work1.png';
 import nodejs from './Nodejs.png';
 import github from './github_icon.png';
 import linkedin from './linkedin_icon.png';
+import paymentGateway from './paymentGateway.png';
 
 export const assets = {
     user_image,
     home,
     github_white,
-    
+paymentGateway,
     github,
     code_icon,
     Work1,
@@ -96,49 +97,66 @@ export const assets = {
 };
 
 export const workData = [
-    {
-        title: 'Travel App',
-        description: 'Front End Development',
-        bgImage: Work1,
-         githubLink: 'https://github.com/Dinuki85/TravelApp',
-    },
-    {
-        title: 'Disaster watch app',
-        description: 'Contribute to Full Stack Web & Mobile App Development',
-        bgImage: DisasterWatch,
-        githubLink: 'https://github.com/DisasterWatchHQ',
-    },
-    {
-        title: 'NexShift Stratergies',
-        description: 'Full Stack Development',
-        bgImage: home,
-        githubLink: 'https://github.com/Dinuki85/NexShift_Stratergies',
-    }
-]
+  {
+    title: 'Travel App',
+    description: 'Front End Development',
+    bgImage: assets.Work1,
+    githubLink: 'https://github.com/Dinuki85/TravelApp',
+  },
+  {
+    title: 'Disaster watch app',
+    description: 'Contribute to Full Stack Web & Mobile App Development',
+    bgImage: assets.DisasterWatch,
+    githubLink: 'https://github.com/DisasterWatchHQ',
+  },
+  {
+    title: 'NexShift Stratergies',
+    description: 'Full Stack Development',
+    bgImage: assets.home,
+    githubLink: 'https://github.com/Dinuki85/NexShift_Stratergies',
+  },
+  {
+    title: 'Payment Gateway Using Stripe in the SpringBoot ',
+    description: 'Integrate payment Gateway in SpringBooot application(Backend Development)',
+    bgImage: assets.paymentGateway,
+    githubLink: 'https://github.com/Dinuki85/paymentGateway.git',
+  },
+   
+];
+
+export const mediaData = [
+  {
+    title: 'Backend Payment Gateway Demo',
+    description: 'A demonstration video of backend payment gateway using Springboot and Stripe.',
+    video: assets.backend,
+  },
+];
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Full Stack Web Development', 
-        description: 'Full Stack Web Development involves creating both the frontend (user interface) and backend (server-side logic) of web applications.As a Full Stack Developer, you work with technologies like HTML, CSS, and JavaScript to design intuitive, responsive user interfaces, and use backend frameworks and databases to handle data storage, authentication, APIs, and server-side processes. ', link: '' },
-    {
-        icon: assets.ui_icon, 
-        title: 'Design with Canva',
-        description: 'Design with Canva offers a powerful platform to create visually stunning graphics, presentations, and documents. It simplifies designing with intuitive drag-and-drop tools, templates, and a vast library of elements to meet your branding and creative needs effortlessly.',
-        link: '' 
-    },
-    {
-        icon: assets.web_icon, 
-        title: 'Frontend Development',
-        description: 'Frontend Development focuses on creating responsive and intuitive user interfaces using cutting-edge tools and technologies. Expertise includes React.js, Tailwind CSS, and Next.js to craft modern, fast-loading, and SEO-friendly web applications.',
-        link: '' 
-    },
-    {
-        icon: assets.web_icon, 
-        title: 'Backend Development',
-        description: 'Backend Development involves building scalable, secure, and efficient server-side applications. Proficiency includes technologies like Spring Boot, Node.js, MySQL, and MongoDB to implement robust APIs, manage databases, and handle server logic effectively.',
-        link: '' 
-    },
+  {
+    icon: assets.web_icon, // Replace with a relevant icon if you want
+    title: 'Full Stack Web Development',
+    description:
+      'Deliver end-to-end web solutions by integrating frontend technologies like React.js and Next.js with backend frameworks such as Spring Boot and Node.js. Build responsive, maintainable, and scalable applications tailored to user needs.',
+    link: '',
+  },
+  {
+    icon: assets.web_icon, // Replace with a React/Next.js icon if available
+    title: 'Modern Frontend Development',
+    description:
+      'Create dynamic, SEO-optimized interfaces using React.js, Next.js, and style them with Tailwind CSS. Focus on performance, accessibility, and responsive design to ensure a smooth user experience across all devices.',
+    link: '',
+  },
+  {
+    icon: assets.web_icon, // Replace with Spring Boot/Node.js icon if available
+    title: 'Robust Backend Development',
+    description:
+      'Develop secure, high-performance backend services with Spring Boot and Node.js. Manage data efficiently with MySQL and MongoDB, implement RESTful APIs, and ensure seamless integration with frontend clients.',
+    link: '',
+  },
+];
 
-]
+
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Tech Stack', description: 'HTML, CSS, JavaScript ,React Js, Next Js,Springboot,Node js,Mysql,MongoDB' },

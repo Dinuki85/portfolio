@@ -26,23 +26,16 @@ const Services = () => {
     >
       <div className='w-full text-center'>
         <motion.h2
-          initial={{ y: -20, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
-          className='mb-10 text-5xl font-Ovo'
-        >
-          My Services
-        </motion.h2>
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="mb-10 text-6xl font-bold text-center font-Ovo lg:text-7xl"
+              >
+               My Services
+              </motion.h2>
 
         <div className='relative w-full'>
-          {/* Left Scroll Button */}
-          <button
-            onClick={() => handleScroll('left')}
-            className='absolute left-0 z-10 p-4 text-3xl transform -translate-y-1/2 bg-white rounded-full shadow-md top-1/2 dark:bg-gray-800'
-          >
-            ◀
-          </button>
-
+        
           {/* Services Scroll Container */}
           <motion.div
             ref={scrollContainerRef}
@@ -54,7 +47,19 @@ const Services = () => {
                 key={index} 
                 className='flex flex-col items-center justify-center w-full max-w-[350px] min-w-[350px] p-8 py-12 mx-auto duration-500 border border-gray-400 rounded-lg cursor-pointer hover:shadow-black hover:bg-lightHover hover:-translate-y-1 dark:hover:bg-darkHover dark:hover:shadow-white'
               >
-                <Image src={icon} alt='' className='w-16 h-16 mb-6' />
+                <motion.div 
+                  className='mb-6'
+                  whileHover={{ scale: 1.2, rotate: [0, 10, -10, 0] }}
+                  transition={{ type: 'tween', duration: 0.6, ease: 'easeInOut' }}
+                >
+                  <Image 
+                    src={icon} 
+                    alt={title} 
+                    width={64} 
+                    height={64} 
+                    style={{ objectFit: 'contain' }} 
+                  />
+                </motion.div>
                 <h3 className='my-4 text-lg text-center text-gray-700 dark:text-white'>
                   {title}
                 </h3>
@@ -66,12 +71,7 @@ const Services = () => {
           </motion.div>
 
           {/* Right Scroll Button */}
-          <button
-            onClick={() => handleScroll('right')}
-            className='absolute right-0 z-10 p-4 text-3xl transform -translate-y-1/2 bg-white rounded-full shadow-md top-1/2 dark:bg-gray-800'
-          >
-            ▶
-          </button>
+          
         </div>
       </div>
     </motion.div>
