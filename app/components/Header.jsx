@@ -72,8 +72,8 @@ const Header = () => {
   initial={{ y: -30, opacity: 0 }}
   whileInView={{ y: 0, opacity: 1 }}
   transition={{ duration: 0.8, delay: 1.2 }}
-  href='/resume.pdf' // Updated path
-  download="Dinuki_Resume.pdf"
+  href='/Dinuki_CV.pdf' // Updated path
+  download="Dinuki_CV.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className='flex items-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full dark:text-black'

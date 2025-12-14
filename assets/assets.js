@@ -45,12 +45,15 @@ import nodejs from './Nodejs.png';
 import github from './github_icon.png';
 import linkedin from './linkedin_icon.png';
 import paymentGateway from './paymentGateway.png';
+import userManagement from './userManagementSystem.png';
+import shoppingMart from './ShoppingMart.png';
 
 export const assets = {
     user_image,
     home,
     github_white,
 paymentGateway,
+userManagement,
     github,
     code_icon,
     Work1,
@@ -93,7 +96,8 @@ paymentGateway,
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    shoppingMart
 };
 
 export const workData = [
@@ -120,6 +124,18 @@ export const workData = [
     description: 'Integrate payment Gateway in SpringBooot application(Backend Development)',
     bgImage: assets.paymentGateway,
     githubLink: 'https://github.com/Dinuki85/paymentGateway.git',
+  },
+  {
+    title: 'User Management System ',
+    description: 'Developed a full-stack user management system allowing real-time Add, View, Edit, and Delete operations with a responsive UI. Implemented RESTful APIs, database operations, and exception handling to ensure scalability and reliability.',
+    bgImage: assets.userManagement,
+    githubLink: 'https://github.com/Dinuki85/SpringbootCRUDAppliCATION',
+  },
+  {
+    title: 'Shopping Mark ',
+    description: 'Developing a Fully working backend with product management(Add to cart,Buy products ,Add,Remove,Update products),User management with role based(Admin,Customer,Seller),All the features like e-commerce website ,User Authentication with Jwt Authentication .',
+    bgImage: assets.shoppingMart,
+    githubLink: 'https://github.com/Dinuki85/shoppingMart',
   },
    
 ];
