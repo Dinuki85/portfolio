@@ -66,14 +66,11 @@ const About = ({ isDarkMode }) => {
         transition={{ duration: 0.8 }}
         className="max-w-full mb-8 text-lg font-light leading-relaxed text-center font-Ovo dark:text-gray-200"
       >
-        Hi!<br />
-        I am a Full Stack Web Developer and Designer with over one year of professional experience. Currently pursuing a BSc in Information Technology at the University of Jaffna, I specialize in building robust and scalable web applications using Next.js, React.js, Spring Boot, Node.js, MySQL, and MongoDB.
-        <br /><br />
-        In addition to my strong foundation in frontend and backend development, I am actively expanding my expertise in cloud computing technologies, including containerization and orchestration tools, to architect and deploy resilient, cloud-native solutions.
-        <br /><br />
-        A quick learner with a passion for crafting intuitive and user-friendly designs, I combine technical proficiency with a creative approach to deliver seamless user experiences. I am committed to continuous improvement and thrive in collaborative environments where innovation and problem-solving are prioritized.
-        <br /><br />
-        I welcome opportunities to contribute to impactful projects and build solutions that drive real-world value. Please feel free to reach out to discuss potential collaborations or to learn more about my skills and experience.
+        I am an Information Technology undergraduate at University of Jaffna with hands-on experience in designing, developing, and testing full-stack web applications using Spring Boot, React, and modern web technologies. I have built secure RESTful APIs with JWT-based authentication, designed normalized database schemas using MySQL and MongoDB, and integrated scalable frontend–backend systems following clean architectural principles.
+<br/>  
+Alongside development, I emphasize software quality through API testing with Postman, input validation, exception handling, and structured service-layer implementation to ensure reliability and maintainability. I am continuously expanding my knowledge in cloud technologies and modern deployment practices to build resilient, production-ready applications.
+<br/>
+Driven by curiosity and a commitment to continuous improvement, I am passionate about writing clean, efficient code and contributing to impactful software solutions within collaborative engineering environments.
       </motion.p>
 
       {/* Highlighted Tech Stack Section */}

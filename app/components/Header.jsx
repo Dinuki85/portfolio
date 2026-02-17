@@ -28,7 +28,7 @@ const Header = () => {
         transition={{ duration: 0.6, delay: 0.3 }}
         className='flex items-end gap-2 text-xl md:text-2xl md-3 font-Ovo'
       >
-        <b>Hi! I'm Dinuki Prarthana</b>
+        <b>Hey! It's me. Dinuki Prarthana</b>
       </motion.h3>
 
       <motion.h1
@@ -37,7 +37,7 @@ const Header = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'
       >
-        Full Stack Web Developer
+        Software Engineer | Full-Stack Developer
       </motion.h1>
 
       <motion.p
@@ -46,8 +46,7 @@ const Header = () => {
         transition={{ duration: 0.6, delay: 0.7 }}
         className='max-w-2xl mx-auto font-Ovo'
       >
-        I am a passionate full-stack developer from Sri Lanka, Kandy,
-        skilled in crafting dynamic and user-friendly web applications.
+        Building Scalable Web Applications with React, Spring Boot & MySQL
       </motion.p>
 
       <div className='flex flex-col items-center gap-4 mt-4 sm:flex-row'>
@@ -72,13 +71,13 @@ const Header = () => {
   initial={{ y: -30, opacity: 0 }}
   whileInView={{ y: 0, opacity: 1 }}
   transition={{ duration: 0.8, delay: 1.2 }}
-  href='/Dinuki_CV.pdf' // Updated path
-  download="Dinuki_CV.pdf"
+  href='/Dinuki_Prarthana.pdf' // Updated path
+  download="Dinuki_Prarthana.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className='flex items-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full dark:text-black'
 >
-  My Resume
+  My CV
   <Image
     src={assets.download_icon}
     alt="Download Icon"
